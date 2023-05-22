@@ -7,7 +7,7 @@ const express=require('express')
 const bodyparser=require('body-parser')
 const cors=require('cors')
 const app=express()
-const port=3021 || process.env.PORT;
+const port=3010 || process.env.PORT;
 
 const configuration = new Configuration({
     // organization: "org-i16GdI3biVetsydNnhzCYRLs",
