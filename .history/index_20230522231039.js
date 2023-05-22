@@ -7,18 +7,16 @@ const express=require('express')
 const bodyparser=require('body-parser')
 const cors=require('cors')
 const app=express()
-const port=3010;
+const port=3009;
 
 const configuration = new Configuration({
     // organization: "org-i16GdI3biVetsydNnhzCYRLs",
-    apiKey:"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",
+    apiKey:"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",
 });
 const openai = new OpenAIApi(configuration);
 
 app.use(bodyparser.json())
 app.use(cors())
-
-
 app.post('/',async(req,res)=>{
     const {message}=req.body
     const response = await openai.createCompletion({
