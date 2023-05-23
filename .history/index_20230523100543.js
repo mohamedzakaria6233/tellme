@@ -6,7 +6,7 @@ const port=3500;
 const OpenAI=require('openai')
 const { Configuration, OpenAIApi } =OpenAI;
 const openai=new OpenAIApi(new Configuration({
-    apiKey:process.env.SECRET
+    apiKey:"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"
 }))
 
 
